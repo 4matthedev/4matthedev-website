@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en" data-type="software" data-radius="sharp" data-buttons="solid" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>4MATTHEDEV — Independent systems engineer</title>
+<meta name="description" content="Systems engineering beyond abstraction: NESesis, a NES emulator in C++; Metis Agent, a local-first coding agent in Go; and ollX, a self-hosted interface for Ollama.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="4MATTHEDEV — Independent systems engineer">
+<meta property="og:description" content="Emulators, coding agents, and local AI systems, built from the bus up.">
+<meta property="og:image" content="share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f2f0e9">
+<meta name="site-kind" content="software">
+<meta name="page-type" content="software">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400..500&display=swap">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<link rel="stylesheet" href="page.css">
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script src="assets/backgrounds/backgrounds.js"></script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/iris-opens/moment.js">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="nav__logo" href="#top" aria-label="4MATTHEDEV, home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      4MATTHEDEV
+    </a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item">
+        <a class="nav__link" href="#work" data-section="work">Work
+          <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="nav__menu">
+          <div class="wrap grid">
+            <div class="menu-col span-4">
+              <p class="t-label">Selected systems</p>
+              <a href="#work">Metis Agent<span>Local-first coding agent</span></a>
+              <a href="#nesesis">NESesis<span>Cycle-conscious NES emulator</span></a>
+              <a href="#ollx">ollX<span>Self-hosted Ollama interface</span></a>
+            </div>
+            <div class="menu-col span-3">
+              <p class="t-label">Practice</p>
+              <a href="#method">Method<span>How the systems get read</span></a>
+              <a href="#index">Index<span>Languages, tools, infrastructure</span></a>
+            </div>
+            <div class="menu-note span-3 start-10">
+              <p class="t-label">Open source</p>
+              <p class="t-small">The work is built in public on GitHub. Repositories, source, and commit history.</p>
+              <a class="link" href="https://github.com/4matthedev" target="_blank" rel="noopener">Visit GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="#method" data-section="method">Method</a></div>
+      <div class="nav__item"><a class="nav__link" href="#index" data-section="index">Index</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__link" href="https://github.com/4matthedev" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn--primary" href="mailto:4matthedev@gmail.com?subject=Engineering%20enquiry">Get in touch</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <span class="nav__progress" aria-hidden="true"></span>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero hero--index" data-enter aria-labelledby="hero-h">
+    <div class="wrap">
+      <div class="hero-text">
+        <div class="hero-meta mono">
+          <span>Independent systems engineer</span>
+          <span>Germany / Türkiye · UTC+1</span>
+          <span class="hero-meta__end">Portfolio / 2026</span>
+          <button class="grid-toggle mono" type="button" aria-pressed="false">Grid <span data-grid-state>off</span></button>
+        </div>
+
+        <div class="hero-stage">
+          <h1 id="hero-h">ENGINEERING<br><span class="red">BEYOND</span><br>ABSTRACTION.</h1>
+          <p class="hero-figure mono" aria-hidden="true">FIG. 01<br><span>The layer<br>beneath.</span></p>
+        </div>
+
+        <div class="hero-lower">
+          <div class="grid">
+            <div class="span-5 hero-intro">
+              <p class="hero-lead">I build emulators, coding agents, and local AI systems — and work down to the layer where they actually run.</p>
+              <div class="btn-row">
+                <a class="btn btn--primary" href="mailto:4matthedev@gmail.com?subject=Engineering%20enquiry">Get in touch</a>
+                <a class="btn btn--secondary" href="#work">See the work</a>
+              </div>
+            </div>
+            <div class="span-4 start-6 hero-index">
+              <p class="t-label muted">Selected systems</p>
+              <a href="#work"><span class="hero-index__num mono">01</span><span class="hero-index__name">Metis Agent</span><span class="hero-index__tech mono">Go</span></a>
+              <a href="#nesesis"><span class="hero-index__num mono">02</span><span class="hero-index__name">NESesis</span><span class="hero-index__tech mono">C++17</span></a>
+              <a href="#ollx"><span class="hero-index__num mono">03</span><span class="hero-index__name">ollX</span><span class="hero-index__tech mono">Svelte</span></a>
+            </div>
+            <dl class="span-3 start-10 hero-facts">
+              <div><dt>Based</dt><dd>Germany–Türkiye</dd></div>
+              <div><dt>Focus</dt><dd>Systems &amp; local AI</dd></div>
+              <div><dt>Status</dt><dd><span class="status-dot" aria-hidden="true"></span>Open to work</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="hero-foot mono">
+          <span class="scroll-cue" aria-hidden="true"></span>
+          <span>Scroll to inspect</span>
+          <span class="hero-foot__rule" aria-hidden="true"></span>
+          <span>C++ / Go / Rust / C# / Python</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section ground-inverse section--metis" id="work" data-moment="iris-opens" data-moment-opts='{"from": "base"}' aria-labelledby="metis-h">
+    <div class="wrap">
+      <div class="project-head grid">
+        <div class="span-8">
+          <p class="kicker mono"><span class="red">01</span> / 03 <span class="kicker__type">Local-first coding agent</span></p>
+          <h2 id="metis-h">Metis Agent plans the change, <span class="red">then verifies it.</span></h2>
+        </div>
+        <div class="span-4 start-9 project-head__side">
+          <p class="project-lead">An autonomous coding agent for developers who want the codebase, the models, and the machine to stay their own.</p>
+          <a class="link" href="https://github.com/4matthedev/metis-agent" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </div>
+
+      <div class="grid project-grid">
+        <div class="span-4 project-copy">
+          <div>
+            <p class="project-body">Metis explores the repository, plans the change, edits files, runs tools, and verifies the result. Every call and result stays visible in the terminal.</p>
+            <p class="project-body">It runs local models through Ollama, llama.cpp, LM Studio, or llama-prism, and can point at OpenAI, OpenRouter, Groq, Together, or another compatible endpoint.</p>
+          </div>
+
+          <dl class="spec">
+            <div><dt>Language</dt><dd>Go 1.25+</dd></div>
+            <div><dt>Interface</dt><dd>Full-screen TUI · REPL · one-shot</dd></div>
+            <div><dt>Control</dt><dd>Approval · undo · recovery</dd></div>
+            <div><dt>Protocol</dt><dd>JSON events · Agent Client Protocol</dd></div>
+          </dl>
+
+          <div class="mode-block">
+            <p class="t-label muted">Modes</p>
+            <ul class="mode-list mono">
+              <li>General</li><li>Planner</li><li>Builder</li><li>Debugger</li><li>Cybersecurity</li><li>Simplifier</li>
+            </ul>
+          </div>
+
+          <a class="link project-link" href="https://github.com/4matthedev/metis-agent" target="_blank" rel="noopener">Read the source</a>
+        </div>
+
+        <div class="span-7 start-6 project-visual">
+          <div class="term" role="img" aria-label="Metis Agent session from the README: the agent lists the project, runs the failing test, edits calc.py, reruns the test, and reports that add is fixed.">
+            <div class="term__bar mono">
+              <span class="term__id"><span class="red">●</span> METIS / SESSION 01</span>
+              <span>~/work/calc</span>
+              <span class="term__local">LOCAL</span>
+            </div>
+            <div class="term__body mono">
+              <p class="term__prompt"><span class="term__who">you</span> fix the failing test in calc.py</p>
+              <p class="term__tool"><span class="term__dot"></span> list_dir <span class="term__arg">. (depth 2)</span></p>
+              <p class="term__tool"><span class="term__dot"></span> shell <span class="term__arg">python -m unittest -v</span></p>
+              <p class="term__out term__out--fail">FAIL&nbsp; test_add (calc.TestCalc)</p>
+              <p class="term__tool"><span class="term__dot"></span> file_edit <span class="term__arg">calc.py</span> <span class="term__badge">diff before write</span></p>
+              <p class="term__think">review the edit · approve · write</p>
+              <p class="term__tool"><span class="term__dot"></span> shell <span class="term__arg">python -m unittest -v</span></p>
+              <p class="term__out term__out--ok">OK&nbsp; Ran 2 tests</p>
+              <p class="term__answer">Fixed <b>add</b> and both tests pass.</p>
+              <p class="term__status"><span class="red">●</span> ready <span class="term__sep">/</span> 5 steps · 1.2s</p>
+            </div>
+            <div class="term__foot mono">
+              <span>TOOL CALLS INSPECTABLE</span>
+              <span>APPROVAL BEFORE WRITE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--nesesis" id="nesesis" aria-labelledby="nesesis-h">
+    <div class="wrap">
+      <div class="project-head grid">
+        <div class="span-8">
+          <p class="kicker mono"><span class="red">02</span> / 03 <span class="kicker__type">Emulation / C++17</span></p>
+          <h2 id="nesesis-h">NESesis rebuilds the NES <span class="red">one bus cycle</span> at a time.</h2>
+        </div>
+        <div class="span-4 start-9 project-head__side">
+          <p class="project-lead">A cycle-conscious NES/Famicom emulator. The bus and iNES cartridge parser are in place; the 6502 core, PPU, and APU are under active development.</p>
+          <a class="link" href="https://github.com/4matthedev/NESesis" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </div>
+
+      <div class="grid project-grid">
+        <div class="span-4 project-copy">
+          <div>
+            <p class="project-body">The project starts at the memory map, not the screen. A 2&nbsp;KB RAM mirrored through <span class="mono">$1FFF</span>, PPU and APU registers, OAM DMA, controller ports, and cartridge space all sit on one bus.</p>
+            <p class="project-body">The test harness synthesizes byte-perfect iNES images in memory with sentinel values, so off-by-one parser and mapper errors fail loudly. No copyrighted ROMs are tested.</p>
+          </div>
+
+          <dl class="spec">
+            <div><dt>Language</dt><dd>C++17</dd></div>
+            <div><dt>Video / audio</dt><dd>raylib</dd></div>
+            <div><dt>Build</dt><dd>CMake 3.16+</dd></div>
+            <div><dt>Status</dt><dd>Bus &amp; cartridge in place; CPU / PPU / APU in development</dd></div>
+          </dl>
+
+          <ul class="phase-list mono">
+            <li><span class="phase-dot phase-dot--done" aria-hidden="true"></span><span>Bus / memory map</span><span class="phase-state">In place</span></li>
+            <li><span class="phase-dot phase-dot--done" aria-hidden="true"></span><span>iNES parser / mappers</span><span class="phase-state">In place</span></li>
+            <li><span class="phase-dot phase-dot--wip" aria-hidden="true"></span><span>6502 / PPU / APU</span><span class="phase-state phase-state--wip">In development</span></li>
+          </ul>
+
+          <a class="link project-link" href="https://github.com/4matthedev/NESesis" target="_blank" rel="noopener">Read the source</a>
+        </div>
+
+        <div class="span-8 project-visual nes-visual">
+          <figure class="diagram-panel" role="img" aria-label="NESesis system map: the 6502 CPU, PPU, APU, and iNES cartridge connected by a 16-bit address and 8-bit data bus; OAM DMA at $4014; memory ranges from $0000 to $FFFF.">
+            <div class="diagram-panel__head mono">
+              <span>System map / NTSC</span>
+              <span>FIG. 02</span>
+            </div>
+            <svg class="sysmap" viewBox="0 0 600 300" aria-hidden="true">
+              <g class="sm-node">
+                <rect x="18" y="26" width="184" height="82"/>
+                <text x="34" y="50" class="sm-title">CPU / RICOH 2A03</text>
+                <text x="34" y="68" class="sm-sub">6502 CORE · 1.79 MHZ</text>
+                <text x="34" y="86" class="sm-sub">$0000–$07FF · 2 KB RAM</text>
+              </g>
+              <g class="sm-node">
+                <rect x="398" y="26" width="184" height="82"/>
+                <text x="414" y="50" class="sm-title">PPU / 2C02</text>
+                <text x="414" y="68" class="sm-sub">3 DOTS / CPU CYCLE</text>
+                <text x="414" y="86" class="sm-sub">$2000–$2007 · REGISTERS</text>
+              </g>
+              <g class="sm-node sm-node--bus">
+                <rect x="196" y="144" width="208" height="58"/>
+                <text x="212" y="168" class="sm-title">SYSTEM BUS</text>
+                <text x="212" y="186" class="sm-sub">16-BIT ADDRESS / 8-BIT DATA</text>
+              </g>
+              <g class="sm-node">
+                <rect x="18" y="238" width="184" height="46"/>
+                <text x="34" y="258" class="sm-title">APU / 2A03</text>
+                <text x="34" y="274" class="sm-sub">$4000–$4013 · 5 CHANNELS</text>
+              </g>
+              <g class="sm-node">
+                <rect x="398" y="238" width="184" height="46"/>
+                <text x="414" y="258" class="sm-title">CARTRIDGE / iNES</text>
+                <text x="414" y="274" class="sm-sub">PRG · CHR · MAPPER</text>
+              </g>
+              <g class="sm-wire">
+                <path d="M110 108 V144"/>
+                <path d="M490 108 V144"/>
+                <path d="M110 238 V202"/>
+                <path d="M490 238 V202"/>
+              </g>
+              <path class="sm-wire sm-wire--accent" d="M300 144 V118 H512 V108"/>
+              <circle class="sm-pulse" cx="512" cy="108" r="3.5"/>
+              <text x="304" y="134" class="sm-annot sm-annot--accent">$4014 · OAM DMA</text>
+              <text x="18" y="16" class="sm-annot">$0000</text>
+              <text x="564" y="16" class="sm-annot">$FFFF</text>
+            </svg>
+            <div class="sysmap-mobile mono" aria-hidden="true">
+              <div><b>CPU</b><span>Ricoh 2A03 · 6502 · 1.79 MHz</span></div>
+              <div><b>PPU</b><span>2C02 · 3 dots / CPU cycle</span></div>
+              <div class="is-bus"><b>BUS</b><span>16-bit address / 8-bit data</span></div>
+              <div><b>APU</b><span>2A03 · $4000–$4013</span></div>
+              <div><b>CART</b><span>iNES · PRG · CHR · mapper</span></div>
+            </div>
+            <div class="diagram-panel__foot mono">
+              <span>BUS / CPU READ IS SIDE-EFFECTFUL</span>
+              <span class="red">OPEN-BUS LATCH</span>
+            </div>
+          </figure>
+
+          <div class="code-plate">
+            <div class="code-plate__head mono"><span>src/Bus.cpp</span><span>READ / $0000–$1FFF</span></div>
+            <pre class="mono"><code>if (addr &lt; 0x2000) {
+  const uint8_t data = m_ram[addr &amp; 0x07FF];
+  m_openBus = data;
+  return data;
+}</code></pre>
+            <p class="code-note mono"><span class="red">A11–A15</span> are not wired. The mask is the mirror.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ollx" id="ollx" aria-labelledby="ollx-h">
+    <div class="wrap">
+      <div class="project-head grid">
+        <div class="span-8">
+          <p class="kicker mono"><span class="red">03</span> / 03 <span class="kicker__type">Local AI infrastructure</span></p>
+          <h2 id="ollx-h">ollX gives a local model <span class="red">a local interface.</span></h2>
+        </div>
+        <div class="span-4 start-9 project-head__side">
+          <p class="project-lead">A self-hosted web interface for Ollama: streaming chat, image attachments for vision models, model management, and per-user history in SQLite.</p>
+          <a class="link" href="https://github.com/4matthedev/ollx" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </div>
+
+      <div class="grid project-grid">
+        <div class="span-4 project-copy">
+          <div>
+            <p class="project-body">The frontend is Svelte and Vite; FastAPI proxies Ollama’s HTTP API, streams chat over SSE, and keeps users and sessions in SQLite. The interface ships light and dark monochrome themes.</p>
+            <p class="project-body">Generation settings expose temperature, top-p, max tokens, repeat penalty, and a system prompt. Models can be pulled and deleted from the interface.</p>
+          </div>
+
+          <dl class="spec">
+            <div><dt>Frontend</dt><dd>Svelte · Vite</dd></div>
+            <div><dt>Backend</dt><dd>FastAPI · SSE</dd></div>
+            <div><dt>Data</dt><dd>SQLite · per-user history</dd></div>
+            <div><dt>Run</dt><dd>Docker · port 8000</dd></div>
+          </dl>
+
+          <div class="flow mono">
+            <span>SVELTE + VITE</span><span class="flow__arrow" aria-hidden="true">→</span><span>FASTAPI</span><span class="flow__arrow" aria-hidden="true">→</span><span>OLLAMA</span>
+          </div>
+
+          <a class="link project-link" href="https://github.com/4matthedev/ollx" target="_blank" rel="noopener">Read the source</a>
+        </div>
+
+        <div class="span-8 project-visual ollx-visual">
+          <div class="ollx" role="img" aria-label="ollX interface reconstructed from its Svelte source: a conversation sidebar, four empty-state suggestions, a composer, and a settings panel showing temperature 0.7, top-p 0.9, max tokens 512, and repeat penalty 1.1.">
+            <div class="ollx__side">
+              <div class="ollx__brand"><span class="ollx__mark" aria-hidden="true"></span>ollX</div>
+              <div class="ollx__new">+ &nbsp;New chat</div>
+              <div class="ollx__search">Search conversations</div>
+              <p class="ollx__label">TODAY</p>
+              <p class="ollx__empty">No conversations yet.</p>
+              <div class="ollx__user"><span class="ollx__avatar">4M</span><span><b>4matthedev</b><em>local account</em></span></div>
+            </div>
+
+            <div class="ollx__main">
+              <div class="ollx__top">
+                <span class="ollx__top-title">New conversation</span>
+                <span class="ollx__model">Choose a model <span aria-hidden="true">⌄</span></span>
+              </div>
+              <div class="ollx__stage">
+                <p class="ollx__eyebrow">SUGGESTIONS / SOURCE</p>
+                <div class="ollx__suggestions">
+                  <div class="ollx__suggestion"><b>Help me study</b><span>Create flashcards, quizzes and study plans for any topic.</span></div>
+                  <div class="ollx__suggestion"><b>Grammar check</b><span>Fix grammar and polish any text you paste in.</span></div>
+                  <div class="ollx__suggestion"><b>Show me a code snippet</b><span>Write clean, working code for a language or task.</span></div>
+                  <div class="ollx__suggestion"><b>Brainstorm ideas</b><span>Generate fresh, creative ideas for your project.</span></div>
+                </div>
+              </div>
+              <div class="ollx__composer"><span class="ollx__composer-text">Message a local model</span><span class="ollx__clip" aria-hidden="true">+</span><span class="ollx__send" aria-hidden="true">↑</span></div>
+            </div>
+
+            <div class="ollx__settings">
+              <div class="ollx__settings-head"><span>Settings</span><span class="mono">MONO</span></div>
+              <div class="ollx__field"><label>Temperature <b>0.7</b></label><span class="ollx__slider"><i style="width:70%"></i></span></div>
+              <div class="ollx__field"><label>Top P <b>0.9</b></label><span class="ollx__slider"><i style="width:90%"></i></span></div>
+              <div class="ollx__field"><label>Max tokens <b>512</b></label><span class="ollx__slider"><i style="width:46%"></i></span></div>
+              <div class="ollx__field"><label>Repeat penalty <b>1.1</b></label><span class="ollx__slider"><i style="width:34%"></i></span></div>
+              <div class="ollx__prompt"><span>System prompt</span><i>No system prompt</i></div>
+              <div class="ollx__theme"><span>Light</span><span>Black &amp; White</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--method" id="method" aria-labelledby="method-h">
+    <div class="wrap">
+      <div class="method-head">
+        <p class="kicker mono"><span class="red">04</span> / 06 <span class="kicker__type">Method</span></p>
+        <div class="grid method-grid">
+          <div class="span-8">
+            <h2 class="method-statement" id="method-h">I learn systems by <span class="red">rebuilding</span> them.</h2>
+          </div>
+          <div class="span-4 start-9 method-side">
+            <p class="method-lead">The useful abstraction is the one I can reconstruct. I work down the stack — from a 6502 bus and a cartridge header to Go agent loops and local inference servers — until the system is legible in both directions.</p>
+            <p class="method-note">That is why the work looks like this: source first, then a working model of the machine beneath it.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid method-bottom">
+        <div class="span-3 method-step">
+          <p class="method-step__num mono">01</p>
+          <h3>Read the source</h3>
+          <p>Start with the memory map, the protocol, or the loop. Find the contract before the interface.</p>
+        </div>
+        <div class="span-3 method-step">
+          <p class="method-step__num mono">02</p>
+          <h3>Rebuild the layer</h3>
+          <p>Write the smallest system that can carry the same behavior, then make it exact.</p>
+        </div>
+        <div class="span-3 method-step">
+          <p class="method-step__num mono">03</p>
+          <h3>Test the behavior</h3>
+          <p>Run the test, inspect the result, and keep the proof in the repository.</p>
+        </div>
+        <div class="span-3 method-layers">
+          <p class="t-label muted">The layer I start from</p>
+          <div class="layer-row mono"><span>03</span><span>Application</span></div>
+          <div class="layer-row mono"><span>02</span><span>Runtime</span></div>
+          <div class="layer-row mono"><span>01</span><span>System</span></div>
+          <div class="layer-row layer-row--active mono"><span>00</span><span>Hardware</span><span class="layer-mark" aria-hidden="true"></span></div>
+        </div>
+      </div>
+
+      <p class="method-foot mono">Emulation <span>/</span> Language internals <span>/</span> Local AI infrastructure <span>/</span> Developer tooling</p>
+    </div>
+  </section>
+
+  <section class="section ground-surface section--index" id="index" aria-labelledby="index-h">
+    <div class="wrap">
+      <div class="index-head grid">
+        <div class="span-8">
+          <p class="kicker mono"><span class="red">05</span> / 06 <span class="kicker__type">Technical index</span></p>
+          <h2 id="index-h">The working index.</h2>
+        </div>
+        <div class="span-4 start-9">
+          <p class="project-lead">Languages, systems, and tools that appear in the repositories. Only what the work actually uses.</p>
+        </div>
+      </div>
+
+      <div class="grid index-grid">
+        <div class="index-cell span-4">
+          <p class="index-num mono">01</p>
+          <h3>Languages</h3>
+          <p class="index-values">C++17 <span>·</span> Go <span>·</span> Rust <span>·</span> C# <span>·</span> Python <span>·</span> JavaScript</p>
+        </div>
+        <div class="index-cell span-4">
+          <p class="index-num mono">02</p>
+          <h3>Frameworks</h3>
+          <p class="index-values">raylib <span>·</span> SDL2 <span>·</span> FastAPI <span>·</span> Svelte <span>·</span> Vite</p>
+        </div>
+        <div class="index-cell span-4">
+          <p class="index-num mono">03</p>
+          <h3>Systems</h3>
+          <p class="index-values">6502 <span>·</span> PPU <span>·</span> APU <span>·</span> iNES mappers <span>·</span> CHIP-8 <span>·</span> memory maps</p>
+        </div>
+        <div class="index-cell span-4">
+          <p class="index-num mono">04</p>
+          <h3>Infrastructure</h3>
+          <p class="index-values">Ollama <span>·</span> llama.cpp <span>·</span> LM Studio <span>·</span> SQLite <span>·</span> Docker <span>·</span> Fedora <span>·</span> Hyprland</p>
+        </div>
+        <div class="index-cell span-4">
+          <p class="index-num mono">05</p>
+          <h3>Development</h3>
+          <p class="index-values">Git <span>·</span> CMake <span>·</span> Docker Compose <span>·</span> GCC <span>·</span> Clang</p>
+        </div>
+        <div class="index-cell span-4">
+          <p class="index-num mono">06</p>
+          <h3>Engineering interests</h3>
+          <p class="index-values">Systems programming <span>·</span> language internals <span>·</span> emulation <span>·</span> local AI <span>·</span> developer tooling <span>·</span> software architecture</p>
+        </div>
+      </div>
+
+      <div class="source-row">
+        <p class="t-label muted">Selected source</p>
+        <div class="source-links">
+          <a href="https://github.com/4matthedev/metis-agent" target="_blank" rel="noopener"><span>metis-agent</span><span class="mono">Go</span></a>
+          <a href="https://github.com/4matthedev/NESesis" target="_blank" rel="noopener"><span>NESesis</span><span class="mono">C++17</span></a>
+          <a href="https://github.com/4matthedev/ollx" target="_blank" rel="noopener"><span>ollx</span><span class="mono">Svelte · FastAPI</span></a>
+          <a href="https://github.com/4matthedev/Chip8X-emu" target="_blank" rel="noopener"><span>Chip8X-emu</span><span class="mono">C++ · SDL2</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer closing footer--dark ground-inverse" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--word">
+      <div class="section-head--split">
+        <div>
+          <p class="kicker mono"><span class="red">06</span> / 06 <span class="kicker__type">Contact</span></p>
+          <h2 id="close-h">Let’s inspect the <span class="red">layer beneath.</span></h2>
+          <p class="t-lead close-lead">Open to engineering work and technical collaboration. Germany / Türkiye, UTC+1.</p>
+        </div>
+        <a class="btn btn--primary" href="mailto:4matthedev@gmail.com?subject=Engineering%20enquiry">Get in touch
+          <svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg>
+        </a>
+      </div>
+      <p class="close__word" aria-hidden="true">4MATTHEDEV</p>
+    </div>
+
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-4 footer__brand">
+          <a class="nav__logo" href="#top" aria-label="4MATTHEDEV, back to top">
+            <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            4MATTHEDEV
+          </a>
+          <p class="footer__lede">Independent systems engineering. Built from the bus up.</p>
+        </div>
+        <div class="span-2 footer__col">
+          <h3>Work</h3>
+          <ul>
+            <li><a href="#work">Metis Agent</a></li>
+            <li><a href="#nesesis">NESesis</a></li>
+            <li><a href="#ollx">ollX</a></li>
+          </ul>
+        </div>
+        <div class="span-2 footer__col">
+          <h3>Practice</h3>
+          <ul>
+            <li><a href="#method">Method</a></li>
+            <li><a href="#index">Index</a></li>
+            <li><a href="#top">Top</a></li>
+          </ul>
+        </div>
+        <div class="span-2 footer__col">
+          <h3>Elsewhere</h3>
+          <ul>
+            <li><a href="https://github.com/4matthedev" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="mailto:4matthedev@gmail.com?subject=Engineering%20enquiry">Contact</a></li>
+          </ul>
+        </div>
+        <div class="span-2 footer__col footer__col--status">
+          <h3>Status</h3>
+          <p class="footer__status"><span class="status-dot" aria-hidden="true"></span>Open to work</p>
+          <p class="footer__small mono">UTC+1 / 2026</p>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span>© 2026 4MATTHEDEV</span>
+        <span>Independent systems engineer</span>
+        <a class="socials-link" href="https://github.com/4matthedev" target="_blank" rel="noopener" aria-label="4MATTHEDEV on GitHub">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="grid-overlay" aria-hidden="true"><div class="wrap"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
